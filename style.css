@@ -150,7 +150,7 @@ li {
     justify-content: center; 
     align-items: center; 
     gap: 10px; 
-    background-image: url(/projetoFinal3/images/FUNDO.jpg);
+    background-image: url(images/FUNDO.jpg);
     background-size: cover;
     background-position: center;
     padding: 40px;
