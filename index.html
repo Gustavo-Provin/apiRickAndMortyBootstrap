@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/assets/favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <title>API RICK AND MORTY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="https://rickandmortyapi.com/"><img src="/assets/RICK_MORTY_ICON.png" alt="Logo"></a>
+    </div>
+</header>
+<h1>API de Rick and Morty</h1>
+<div class="search">
+    <input type="text" id="searchInput" placeholder="Digite sua pesquisa...">
+    <button onclick="searchCharacters()"><i class="bi bi-search"></i></button>
+</div>
+<div class="container">
+    <div class="card-container" id="cardContainer"></div>
+</div>
+
+<div id="pagination"></div>
+<footer class="footer">
+    <ul>
+        <li>
+            <span id="characterCount">PERSONAGENS: </span>
+        </li>
+        <li>
+            <span id="locationCount">LOCALIZAÇÕES: </span>
+        </li>
+        <li>
+            <span id="episodeCount">EPISÓDIOS: </span>
+        </li>
+    </ul>
+    <span class="estilo"> DESENVOLVIDO POR <a href="https://github.com/Gustavo-Provin">GUSTAVO PROVIN</a> EM 2024</span>
+</footer>
+<div id="characterModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="modalData"></div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./script.js"></script>
+</body>
+</html>
